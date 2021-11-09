@@ -1,0 +1,113 @@
+.second {
+  background-image: url(https://www.artmajeur.com/medias/hd/l/i/liudmila/artwork/11266706_4.jpg);
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  align-items: center;
+  position: absolute;
+  background-attachment: fixed;
+}
+
+.block {
+  width: 420px;
+  height: 420px;
+  background: red;
+  margin: 110px;
+  animation: name 2s ease infinite;
+  animation-duration: 5s;
+  animation-play-state: inherit;
+  animation-play-state: initial;
+  animation-play-state: unset;
+  background: red;
+  border-radius
+  border: 2px;
+
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  text-decoration: none;
+}
+
+.block:hover {
+  background: blue;
+}
+
+@keyframes name {
+    0% {
+      background: #1ed64f;
+      color: #1d788f;
+    }
+    17% {
+      background: #11ad99;
+    }
+    50% {
+      background: #700e75;
+      color: #8c1515;
+    }
+    100%{
+      background: #bccf17;
+      color: #191f8c;
+    }
+}
+
+.block:hover
+{
+    animation-play-state: paused
+}
+
+h1 {
+color: #b5c1c4;
+}
+
+#leftcol {
+    position: relative; /* Относительное позиционирование */
+    float: left; /* Совмещение колонок по горизонтали */
+    width: 400px; /* Ширина слоя */
+    background: #800000; /* Цвет фона */
+    color: white; /* Цвет текста */
+   }
+   #rightcol {
+    position: relative; /* Относительное позиционирование */
+    float: left; /* Совмещение колонок по горизонтали */
+    left: -50px;  /*Сдвиг слоя влево */
+    top: 50px; /* Смещение слоя вниз */
+    width: 120px; /* Ширина слоя */
+    background: #e0e0e0; /* Цвет фона */
+    border: solid 1px black; /* Параметры рамки */
+   }
+   #leftcol P {
+    padding: 10px; /* Поля вокруг текста */
+    padding-right: 50px; /* Значение поля справа */
+    margin: 0; /* Обнуляем значения отступов */
+   }
+   #rightcol P {
+    padding: 10px; /* Поля вокруг текста */
+    padding-top: 0 /* Значение поля сверху */
+   }
+
+p {
+  color: #b5c1c4;
+}
+
+hr {
+  width: 10px;
+}
+.block h1::after {
+content: '';
+position: absolute;
+background: red;
+width: 100%;
+height: 10px;
+
+transform: scaleX(0);
+transition: 1s
+}
+.block h1:hover::after{
+  transform: scaleX(1);
+}
